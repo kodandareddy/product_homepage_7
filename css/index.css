@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins';
+    height: 100vh;
+    box-sizing: border-box;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    align-items: center;
+
+}
+
+.nav-items{
+    display: flex;
+    gap: 100px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nav-item{
+    font-weight: 100;
+}
+
+.active-item{
+    color: #FE5E35;
+    font-weight: bold;
+
+}
+/* hero section */
+
+.intro-section{
+    display: flex;
+    margin: 0 50px;
+    height:800px;
+    max-height: 100%;
+}
+
+.left-section{
+    width: 60%;
+    align-self: center;
+}
+.right-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 40%;
+}
+.left-section h3{
+    font-size: 50px
+}
+
+.left-section h1{
+    font-size: 100px;
+    font-weight: bold
+}
+.sub-headlines{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 20%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+.sub-headline{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.sub-headlines img{
+    background-color: #FE5E35;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.text{
+    max-width: 800px;
+    color: #A5A5A5;
+    margin-bottom: 50px;
+}
+
+.action-btns{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.action-btn{
+    border: none;
+    background-color: #FE5E35;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* .discount-content{
+    position: absolute;
+    top: 60px;
+    left: 60px;
+} */
+.headPhone{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 0;
+}
+
+.discount-container{
+    position: absolute;
+    color: #fff;
+    left: -50px;
+    bottom: 200px;
+}
+
+.discount-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.discount-content h1{
+    font-size: 40px;
+}
+
+.dot{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+.headphone-div{
+    height: 80%;
+    max-height: 100%
+}
+
+.dots{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.left-btn{
+    transform: translateX(-15%);
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    nav{
+        gap: 10px;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .nav-items{
+        gap: 10px;
+    }
+.intro-section{
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+}
+.left-section,.right-section{
+    width: 95%;
+}
+.left-section h3{
+  font-size: 25px;
+}
+.left-section h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+.right-section{
+    margin: 50px 0;
+}
+
+.action-btns{
+    flex-direction: column;
+    justify-content: center;
+}
+.headPhone{
+    position:static;
+     width: 100%;
+}
+.discount{
+    width:100px;
+}
+.discount-container{
+  display: none;
+}
+
+.discount-content h1{
+    font-size: 20px;
+}
+.dots{
+    align-items: center;
+    justify-content: center;
+}
+.left-btn{
+    transform: translateX(0);
+}
+}
